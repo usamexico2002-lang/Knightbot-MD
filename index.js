@@ -44,7 +44,7 @@ setInterval(() => store.writeToFile(), settings.storeWriteInterval || 10000);
 // Express endpoint para mantener bot activo en Render
 const app = express();
 const port = process.env.PORT || 3000;
-app.get('/', (req, res) => res.send('🤖 KnightBot MD está activo en Render!'));
+app.get('/', (req, res) => res.send('🤖 KnightBot MD activo en Fly.io!'));
 app.listen(port, () => console.log(`Servidor web escuchando en el puerto ${port}`));
 
 // Memory optimization
